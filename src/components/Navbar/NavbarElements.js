@@ -27,10 +27,11 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
+    font-size: 1.5rem;
     position: absolute;
-    top: 10px;
-    left: 25px;
+    top: 17px;
+    left: 10px;
   }
 `;
 
