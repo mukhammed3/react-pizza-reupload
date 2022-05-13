@@ -14,7 +14,7 @@ import {
 
 function Products({ heading, data }) {
   return (
-    <ProductsContainer>
+    <ProductsContainer id="pizzas">
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductWrapper>
         {data.map((product, index) => {

@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="/">
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>

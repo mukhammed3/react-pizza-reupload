@@ -22,7 +22,7 @@ function App() {
     <Router>
       <GlobalStyles />
       <Hero />
-      <Products heading="Choose your favorite" data={productData} />
+      <Products heading="Choose your favorite" data={productData} id="test" />
       <Feature />
       <Products heading="Sweet Treats for You" data={productDataTwo} />
       <Footer />

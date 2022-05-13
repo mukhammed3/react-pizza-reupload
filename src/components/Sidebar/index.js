@@ -4,10 +4,12 @@ import {
   Icon,
   CloseIcon,
   SidebarMenu,
-  SidebarLink,
   SideBtnWrap,
   SidebarRoute,
 } from "./SidebarElements";
+
+import Link from "react-scroll/modules/components/Link";
+import "./styles.css";
 
 export const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -16,9 +18,36 @@ export const Sidebar = ({ isOpen, toggle }) => {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to="/">Pizzas</SidebarLink>
-        <SidebarLink to="/">Desserts</SidebarLink>
-        <SidebarLink to="/">Full menu</SidebarLink>
+        <Link
+          className="link"
+          to="pizzas"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Pizzas
+        </Link>
+        <Link
+          className="link"
+          to="feature"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Most popular
+        </Link>
+        <Link
+          className="link"
+          to="desserts"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Desserts
+        </Link>
       </SidebarMenu>
       <SideBtnWrap>
         <SidebarRoute to="/">Order Now</SidebarRoute>
